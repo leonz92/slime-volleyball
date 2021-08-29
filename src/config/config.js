@@ -10,5 +10,8 @@ export default {
   },
   render: {
     pixelArt: true,
+  },
+  dom: {
+
   }
 }
