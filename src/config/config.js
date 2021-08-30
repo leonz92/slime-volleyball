@@ -1,17 +1,16 @@
-/* eslint-disable import/no-anonymous-default-export */
 export default {
-  // eslint-disable-next-line no-undef
   type: Phaser.AUTO,
   parent: 'App',
   width: 800,
   height: 600,
   physics: {
-    defualt: 'arcade',
+    default: 'matter',
+    matter: {
+      gravity: { y: 2 },
+      debug: true
+    }
   },
   render: {
     pixelArt: true,
-  },
-  dom: {
-
   }
 }
