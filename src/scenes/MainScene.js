@@ -1,28 +1,23 @@
 import { Scene } from 'phaser';
-import Volleyball from '../entity/Volleyball';
-import Slime from '../entity/Slime';
 
 export default class MainScene extends Scene {
-  constructor () {
-    super('MainScene');
+	constructor() {
+		super('MainScene')
+	}
+	preload() {
+		this.load.image('beach', '/assets/beach2.png')
   }
+  
+	create() {
+    this.scene.launch('FgScene')
+    this.add.image(0, 0, 'beach').setOrigin(0).setScale(0.666)
 
-  preload () {
-    this.load.atlas('slime', 'assets/slime3.png', 'assets/slime3.json');
-    this.load.json('slime-shape', 'assets/slime-shape.json');
-    this.load.spritesheet('volleyball', '/assets/volleyball3.png', {
-      frameWidth: 128,
-      frameHeight: 128,
-    });
-  }
-
-  create () {
-    const slimeShape = this.cache.json.get('slime-shape');
-
-    this.matter.world.setBounds(0, 0, game.config.width, game.config.height);
-
-    this.slime = new Slime(this, 200, 200, 'slime', 0, {shape: slimeShape.slime2})
-
-    this.volleyball = new Volleyball(this, 200, 0, 'volleyball');
-  }
+    const titleText = 'SLIME VOLLEYBALL'
+    const titleStyle = {
+      font: '85px Creepster',
+      fill: '#6cd124',
+      align: 'center',
+    }
+    this.title = this.add.text(game.config.width / 4, 190, titleText, titleStyle)
+	}
 }
