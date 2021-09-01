@@ -6,8 +6,8 @@ export default {
   physics: {
     default: 'matter',
     matter: {
-      gravity: { y: 1 },
-      debug: true
+      gravity: { y: .8 },
+      // debug: true
     }
   },
   render: {
