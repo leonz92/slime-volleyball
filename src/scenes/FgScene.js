@@ -18,12 +18,12 @@ export default class FgScene extends Scene {
     this.load.atlas('net', 'assets/net.png', 'assets/net.json', {
       frameHeight: 300,
       frameWidth: 300
-    })
+    });
   }
 
   create () {
-    // Assets
-    const slimeShape = this.cache.json.get('slime-shape')
+    // Shape Config
+    const slimeShape = this.cache.json.get('slime-shape');
 
     // World bounds
     this.matter.world.setBounds(0, 0, game.config.width, game.config.height - 20);
@@ -38,14 +38,14 @@ export default class FgScene extends Scene {
     this.slime2 = new Slime(this, 800, 550, 'slime', 0, {
       shape: slimeShape.slime2,
       frictionStatic: 0
-    })
+    });
     this.slime2.flipX = true;
 
     // Volleyball
     this.volleyball = new Volleyball(this, 200, 0, 'volleyball');
 
     // Net
-    this.net = new Net(this, game.config.width / 2, game.config.height - 94, 'net', 0, { shape: slimeShape.net })
+    this.net = new Net(this, game.config.width / 2, game.config.height - 94, 'net', 0, { shape: slimeShape.net });
 
     // Player controls
     this.cursors = this.input.keyboard.createCursorKeys();
