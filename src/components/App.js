@@ -1,15 +1,15 @@
-import logo from './logo.svg';
 import './App.css';
+import Game from './Game';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <p>INSERT SLIME</p>
-        <p>Slime Volleyball</p>
+        <p>SLIME VOLLEYBALL</p>
       </header>
       <div>
-        <p>Intro to game</p>
+        <p>INTRO TO GAME</p>
       </div>
     </div>
   );

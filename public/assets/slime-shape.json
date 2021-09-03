@@ -1,0 +1,56 @@
+{
+	"generator_info": "Shape definitions generated with PhysicsEditor. Visit https://www.codeandweb.com/physicseditor",
+	"slime2": {
+		"type": "fromPhysicsEditor",
+		"label": "slime2",
+		"isStatic": false,
+		"density": 50,
+		"restitution": 0,
+		"friction": 0.1,
+		"frictionAir": 0.01,
+		"frictionStatic": 0.5,
+		"collisionFilter": {
+			"group": 0,
+			"category": 1,
+			"mask": 255
+		},
+		"fixtures": [
+			{
+				"label": "",
+				"isSensor": false,
+				"vertices": [
+					[ { "x":415, "y":186 }, { "x":271, "y":131 }, { "x":236, "y":131 }, { "x":60, "y":252 }, { "x":84, "y":357 }, { "x":108, "y":368 }, { "x":404, "y":368 }, { "x":453, "y":259 } ],
+					[ { "x":94, "y":186 }, { "x":60, "y":252 }, { "x":236, "y":131 } ],
+					[ { "x":60, "y":322 }, { "x":84, "y":357 }, { "x":60, "y":252 } ],
+					[ { "x":428, "y":357 }, { "x":450, "y":324 }, { "x":453, "y":259 }, { "x":404, "y":368 } ]
+				]
+			}
+		]
+	},
+	"net": {
+		"type": "fromPhysicsEditor",
+		"label": "net",
+		"isStatic": true,
+		"density": 1,
+		"restitution": 1,
+		"friction": 0,
+		"frictionAir": 0,
+		"frictionStatic": 0,
+		"collisionFilter": {
+			"group": 0,
+			"category": 1,
+			"mask": 255
+		},
+		"fixtures": [
+			{
+				"label": "",
+				"isSensor": false,
+				"vertices": [
+					[ { "x":163, "y":232 }, { "x":163, "y":114 }, { "x":144, "y":114 }, { "x":137, "y":232 } ],
+					[ { "x":144, "y":39 }, { "x":144, "y":114 }, { "x":156, "y":114 }, { "x":156, "y":39 } ],
+					[ { "x":137, "y":114 }, { "x":137, "y":232 }, { "x":144, "y":114 } ]
+				]
+			}
+		]
+	}
+}
