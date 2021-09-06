@@ -1,7 +1,6 @@
-import './App.css';
-import Game from './Game';
+import './LandingPage.css';
 
-function App() {
+export default function LandingPage() {
   return (
     <div className="App">
       <header className="App-header">
@@ -14,5 +13,3 @@ function App() {
     </div>
   );
 }
-
-export default App;
