@@ -1,15 +1,12 @@
-import './LandingPage.css';
+import React from 'react';
+import Game from './Game';
 
-export default function LandingPage() {
+export default function LandingPage () {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>INSERT SLIME</p>
-        <p>SLIME VOLLEYBALL</p>
-      </header>
-      <div>
-        <p>INTRO TO GAME</p>
-      </div>
-    </div>
-  );
+		<div className='App'>
+			<div>
+				<h2>How To Play</h2>
+			</div>
+		</div>
+	)
 }
