@@ -1,6 +1,5 @@
 export default {
   type: Phaser.AUTO,
-  parent: 'App',
   width: 1000,
   height: 600,
   physics: {
@@ -12,5 +11,14 @@ export default {
   },
   render: {
     pixelArt: true,
+  },
+  scale: {
+    parent: 'game_instance',
+    expandParent: true,
+    mode: Phaser.Scale.WIDTH_CONTROLS_HEIGHT,
+    max: {
+      width: 1000,
+      height: 600
+    }
   }
 }
