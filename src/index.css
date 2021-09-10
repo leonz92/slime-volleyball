@@ -1,11 +1,61 @@
+#game_instance {
+  min-width: 1%;
+}
+
+.Navbar {
+  background-color: #282c34;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: greenyellow;
+  padding: 8px 16px;
+}
+
+.logo-text {
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.logo-container, .nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media screen and (min-width: 601px) {
+  .Navbar {
+    font-size: 2rem;
+  }
+  .Navbar img {
+    max-width: 50px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .Navbar {
+    font-size: 1.25rem;
+  }
+  .Navbar img {
+    max-width: 30px;
+  }
+}
+
+a {
+  color: greenyellow;
+  text-decoration: none;
+}
+
 body {
   margin: 0;
   font-family: Creepster;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-align: center;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+

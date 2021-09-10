@@ -15,7 +15,3 @@ export default class Game extends Phaser.Game {
 		this.scene.start('TitleScene');
 	}
 }
-
-window.onload = function () {
-	window.game = new Game();
-}
