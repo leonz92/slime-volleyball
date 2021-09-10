@@ -8234,6 +8234,11 @@
   "resolved" "https://registry.npmjs.org/performance-now/-/performance-now-2.1.0.tgz"
   "version" "2.1.0"
 
+"phaser-matter-collision-plugin@^1.0.0":
+  "integrity" "sha512-8ihbK5tPmMzpLSbJkrnyPKNZT/TyhN2bjHtthTl2cmTCiJpY6Ih7SZf1Kb6zWtUD8kWlllPrBktF1CcwmMvc0w=="
+  "resolved" "https://registry.npmjs.org/phaser-matter-collision-plugin/-/phaser-matter-collision-plugin-1.0.0.tgz"
+  "version" "1.0.0"
+
 "phaser@^3.55.2":
   "integrity" "sha512-amKXsbb2Ht29dGPKvt1edq3yGGYKtq8373GpJYGKPNPnneYY6MtVTOgjHDuZwtmUyK4v86FugkT3hzW/N4tjxQ=="
   "resolved" "https://registry.npmjs.org/phaser/-/phaser-3.55.2.tgz"
