@@ -14,12 +14,16 @@ export default class Volleyball extends Phaser.Physics.Matter.Sprite {
 
   resetBall () {
     this.setAlpha(0);
-    this.setVelocity(0, 0);
+    this.setVelocity(0, 10);
     if (this.x > 500) {
-      this.setPosition(200, 0);
+      this.setPosition(200, 20);
+      this.setAlpha(1);
+      return true;
     } else {
-      this.setPosition(800, 0);
+      this.setPosition(800, 20);
+      this.setAlpha(1);
+      return false;
     }
-    this.setAlpha(1);
+
   }
 }
