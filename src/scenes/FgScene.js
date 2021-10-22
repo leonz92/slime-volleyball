@@ -26,6 +26,10 @@ export default class FgScene extends Scene {
 			frameWidth: 500,
 			frameHeight: 75
 		});
+		this.load.image('resetButton', 'assets/resetButton.png', {
+			frameWidth: 100,
+			frameHeight: 50,
+		})
 	}
 
 	create() {
@@ -39,6 +43,11 @@ export default class FgScene extends Scene {
 			game.config.width,
 			game.config.height - 20
 		)
+
+		// Reset Button
+		const resetButton = this.add.image(500, 50, 'resetButton')
+			.setInteractive()
+			.on('pointerdown', () => this.scene.restart())
 
 		// Scoreboard
 		this.scoreboard1 = new Scoreboard(this, 250, 50, 'scoreboard', 0);
@@ -110,5 +119,14 @@ export default class FgScene extends Scene {
 		this.slime.update(this.wasd);
 		this.scoreboard1.update(this.score1);
 		this.scoreboard2.update(this.score2);
+		if (this.score1 === 6 || this.score2 === 6) {
+			this.scene.stop();
+		}
+	}
+
+	end () {
+		if (this.score1 === 6 || this.score2 === 6) {
+			this.scene.restart();
+		}
 	}
 }
