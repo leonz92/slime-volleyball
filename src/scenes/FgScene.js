@@ -106,8 +106,7 @@ export default class FgScene extends Scene {
 		});
 
 		// Reset Button
-		const resetButton = this.add
-			.image(500, 50, 'resetButton')
+		this.add.image(500, 50, 'resetButton')
 			.setInteractive()
 			.on('pointerdown', () => {
 				this.score1 = 0;
