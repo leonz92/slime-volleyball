@@ -6,7 +6,7 @@ export default {
 		default: 'matter',
 		matter: {
 			gravity: { y: 0.8 },
-			debug: true
+			// debug: true
 		},
 	},
 	render: {
