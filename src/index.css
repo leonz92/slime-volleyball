@@ -40,7 +40,7 @@
   }
 }
 
-a {
+.Navbar a {
   color: greenyellow;
   text-decoration: none;
 }
@@ -58,4 +58,27 @@ code {
     monospace;
 }
 
+.how-to-play {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1rem;
+  width: 60%;
+  margin: auto;
+}
 
+.About {
+  font-family: 'Courier New', Courier, monospace;
+  max-width: 75%;
+  margin: auto;
+}
+
+.portrait {
+  max-width: 25%;
+}
+
+.icon {
+  max-width: 10%;
+}
+
+figcaption {
+  font-size: .5rem;
+}
