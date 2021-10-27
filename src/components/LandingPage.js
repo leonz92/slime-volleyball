@@ -25,6 +25,7 @@ export default function LandingPage () {
 				<p>Player 2 controls: Up, Down, Left, Right</p>
 				<p>Click the 'Reset' button to restart at any time.</p>
 			</div>
+			&nbsp;
 		</div>
 	)
 }

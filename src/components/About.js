@@ -40,7 +40,6 @@ export default function About () {
 					alt='text css about a blue shield with the number 3 inside'
 				></img>
 			</div>
-
 			<h1>Meet the Developer</h1>
 			<figure>
 				<img
@@ -58,6 +57,24 @@ export default function About () {
 				love creative problem solving and adventure. Feel free to reach out and
 				connect!
 			</p>
+			<div className='social-links'>
+				<a
+					href='https://www.linkedin.com/in/lzhao92/'
+					target='_blank'
+					rel='noopener noreferrer'
+				>
+					<img src='assets/LI-In-Bug.png' alt='LinkedIn logo' />
+				</a>
+				&nbsp;
+				<a
+					href='https://github.com/leonz92/slime-volleyball'
+					target='_blank'
+					rel='noopener noreferrer'
+				>
+					<img src='assets/github-mark-120px-plus.png' alt='Github mark logo' />
+				</a>
+			</div>
+			&nbsp;
 		</div>
 	)
 }

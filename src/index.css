@@ -75,10 +75,19 @@ code {
   max-width: 25%;
 }
 
+.tech-used {
+  display: flex;
+  justify-content: space-around;
+}
+
 .icon {
   max-width: 10%;
 }
 
 figcaption {
   font-size: .5rem;
+}
+
+.social-links a img{
+  max-width: 5%;
 }
