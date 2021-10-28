@@ -8,7 +8,6 @@ export default function LandingPage () {
     return () => window.game.destroy(true);
   }, [])
 
-
   return (
 		<div className='App'>
 			&nbsp;
