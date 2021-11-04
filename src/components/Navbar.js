@@ -9,9 +9,9 @@ export default function Navbar () {
 				<div className="logo-text">Slime Volleyball</div>
 			</div>
 			<div className="nav-links">
-				<Link to='/'>Play</Link>
-				&nbsp;&nbsp;
 				<Link to='/about'>About</Link>
+				&nbsp;&nbsp;
+				<Link to='/'>Play</Link>
 			</div>
 		</header>
 	)
