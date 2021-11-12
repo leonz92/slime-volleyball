@@ -47,7 +47,7 @@ export default class FgScene extends Scene {
 		// Scoreboard
 		this.scoreboard1 = new Scoreboard(this, 250, 50, 'scoreboard', 0);
 		this.scoreboard2 = new Scoreboard(this, 750, 50, 'scoreboard', 0);
-		this.scoreboard2.flipX = true
+		this.scoreboard2.flipX = true;
 
 		// Player 1
 		this.slime = new Slime(this, 200, 550, 'slime', 0, {

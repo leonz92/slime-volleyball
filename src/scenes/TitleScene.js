@@ -17,22 +17,22 @@ export default class TitleScene extends Scene {
 
   create () {
     const screenCenterX =
-			this.cameras.main.worldView.x + this.cameras.main.width / 2
-		const screenCenterY =
-      this.cameras.main.worldView.y + this.cameras.main.height / 2
+      this.cameras.main.worldView.x + this.cameras.main.width / 2;
+    const screenCenterY =
+      this.cameras.main.worldView.y + this.cameras.main.height / 2;
 
     // BG
     this.add.image(screenCenterX, screenCenterY, 'beach').setOrigin(0.5);
 
     // Title
-    const titleText = 'SLIME VOLLEYBALL '
+    const titleText = 'SLIME VOLLEYBALL ';
     const titleStyle = {
-			font: '85px Creepster',
-			fill: 'rgba(95,255,3, 1)',
-			align: 'center',
-			stroke: 'black',
-			strokeThickness: 8,
-		}
+      font: '85px Creepster',
+      fill: 'rgba(95,255,3, 1)',
+      align: 'center',
+      stroke: 'black',
+      strokeThickness: 8,
+    };
     this.title = this.add.text(screenCenterX + 10, screenCenterY - 240, titleText, titleStyle).setOrigin(0.5);
     this.title.setShadow(8, 8, 'black', 2);
 
